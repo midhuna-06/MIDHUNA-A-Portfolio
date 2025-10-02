@@ -78,7 +78,7 @@ function Home() {
 
         {/* Resume Button */}
         <motion.a
-          href="https://drive.google.com/your-resume-link" 
+          href="https://drive.google.com/drive/folders/12PjXtR3zBN5EQT3oi4TXCXtiPb9cmkRR" 
           target="_blank"
           rel="noreferrer"
           className="mt-4 px-6 py-2 bg-cyan-500 text-white font-semibold rounded-full hover:bg-cyan-600 transition"

@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 
 function About() {
-  const [view, setView] = useState("detailed"); 
+  const [view, setView] = useState("detailed");
 
   const contents = {
-    detailed: `Hello — I’m Midhuna A, a 3rd year CSE student at Sri Eshwar College of Engineering , and an FFE Scholar. 
+    detailed: `Hello — I’m Midhuna A, a 3rd year CSE student at Sri Eshwar College of Engineering, and an FFE Scholar. 
 I am an aspiring Full Stack Developer building strong expertise in the MERN stack and Spring Boot. 
 I’m also an AWS enthusiast, exploring cloud services to enhance scalability and deployment.
 
@@ -16,11 +16,9 @@ My practical experience includes projects such as a Banking System (Spring Boot)
 I also actively practice Data Structures & Algorithms on LeetCode to strengthen my problem-solving skills.
 
 My goal is to grow into a versatile software developer, gain deeper expertise in Java, Cloud, and DevOps, and contribute to impactful, scalable applications.`,
-
     short: `I’m Midhuna A, a 3rd year CSE student at Sri Eshwar College of Engineering and an FFE Scholar. 
 I build full-stack applications using MERN and Spring Boot, I’m an AWS enthusiast, currently learning Docker & DevOps, 
 and I love solving problems and developing creative technologies.`,
-
     resume: `3rd year CSE, Sri Eshwar College of Engineering • FFE Scholar • MERN & Spring Boot Full-Stack Developer • AWS enthusiast • Learning Docker • Problem solver`,
   };
 
@@ -34,88 +32,43 @@ and I love solving problems and developing creative technologies.`,
   };
 
   return (
-    <div className="px-6 md:px-20 py-16">
-      {/* Header */}
-      <div className="flex items-center gap-6 mb-8">
-        <img
-          src="/profile.jpg"
-          alt="Midhuna A"
-          className="w-24 h-24 rounded-full border-4 border-cyan-500 shadow-lg object-cover"
-        />
-        <div>
-          <h1 className="text-3xl font-bold">MIDHUNA A</h1>
-          <p className="text-cyan-400 font-medium">
+    <div className="px-4 sm:px-10 py-16">
+      <div className="flex flex-col sm:flex-row items-center gap-4 sm:gap-6 mb-8">
+        <img src="/profile.jpg" alt="Midhuna A" className="w-20 h-20 sm:w-24 sm:h-24 rounded-full border-4 border-cyan-500 shadow-lg object-cover" />
+        <div className="text-center sm:text-left">
+          <h1 className="text-2xl sm:text-3xl font-bold">MIDHUNA A</h1>
+          <p className="text-cyan-400 font-medium text-sm sm:text-base">
             3rd year CSE · Sri Eshwar College of Engineering · FFE Scholar
           </p>
         </div>
       </div>
 
       {/* Toggle Buttons */}
-      <div className="flex flex-wrap gap-3 mb-6">
-        <button
-          onClick={() => setView("detailed")}
-          className={`px-4 py-2 rounded-full font-semibold ${
-            view === "detailed"
-              ? "bg-cyan-500 text-black"
-              : "bg-gray-700 text-gray-300 hover:bg-gray-600"
-          }`}
-        >
-          Detailed
-        </button>
-        <button
-          onClick={() => setView("short")}
-          className={`px-4 py-2 rounded-full font-semibold ${
-            view === "short"
-              ? "bg-cyan-500 text-black"
-              : "bg-gray-700 text-gray-300 hover:bg-gray-600"
-          }`}
-        >
-          Short
-        </button>
-        <button
-          onClick={() => setView("resume")}
-          className={`px-4 py-2 rounded-full font-semibold ${
-            view === "resume"
-              ? "bg-cyan-500 text-black"
-              : "bg-gray-700 text-gray-300 hover:bg-gray-600"
-          }`}
-        >
-          Resume Line
-        </button>
-
-        {/* Copy Button */}
-        <button
-          onClick={copyText}
-          className="ml-auto px-4 py-2 bg-gray-700 text-gray-300 rounded-lg hover:bg-gray-600"
-        >
+      <div className="flex flex-wrap gap-2 sm:gap-3 mb-6">
+        {["detailed", "short", "resume"].map((type) => (
+          <button
+            key={type}
+            onClick={() => setView(type)}
+            className={`px-4 py-2 rounded-full font-semibold ${
+              view === type ? "bg-cyan-500 text-black" : "bg-gray-700 text-gray-300 hover:bg-gray-600"
+            }`}
+          >
+            {type === "detailed" ? "Detailed" : type === "short" ? "Short" : "Resume Line"}
+          </button>
+        ))}
+        <button onClick={copyText} className="ml-auto px-4 py-2 bg-gray-700 text-gray-300 rounded-lg hover:bg-gray-600">
           Copy
         </button>
       </div>
 
-      {/* About Content */}
-      <div className="bg-gray-800 rounded-2xl p-6 shadow-lg whitespace-pre-line text-gray-300 leading-relaxed">
+      <div className="bg-gray-800 rounded-2xl p-4 sm:p-6 shadow-lg whitespace-pre-line text-gray-300 leading-relaxed">
         {contents[view]}
       </div>
 
-      {/* Links */}
-      <div className="flex gap-4 mt-6 text-sm text-gray-400">
+      <div className="flex flex-wrap gap-4 mt-6 text-sm text-gray-400">
         <span>Profiles:</span>
-        <a
-          className="text-cyan-400 hover:underline"
-          href="https://github.com/midhuna-06"
-          target="_blank"
-          rel="noreferrer"
-        >
-          GitHub
-        </a>
-        <a
-          className="text-cyan-400 hover:underline"
-          href="https://leetcode.com/u/midhuna06/"
-          target="_blank"
-          rel="noreferrer"
-        >
-          LeetCode
-        </a>
+        <a className="text-cyan-400 hover:underline" href="https://github.com/midhuna-06" target="_blank" rel="noreferrer">GitHub</a>
+        <a className="text-cyan-400 hover:underline" href="https://leetcode.com/u/midhuna06/" target="_blank" rel="noreferrer">LeetCode</a>
       </div>
     </div>
   );

@@ -9,7 +9,7 @@ function App() {
   return (
     <Router>
       <div className="min-h-screen">
-        {/* Navbar */}
+        
         <nav className="flex flex-col md:flex-row justify-between items-center px-4 sm:px-10 py-4 md:py-6 bg-gradient-to-r from-gray-900 via-gray-800 to-black shadow-lg sticky top-0 z-50 gap-4 md:gap-0">
           <div className="flex flex-wrap justify-center md:justify-start space-x-2 sm:space-x-4 md:space-x-6 text-lg font-semibold">
             <Link to="/" className="hover:text-cyan-400 transition">Home</Link>

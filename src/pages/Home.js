@@ -4,9 +4,25 @@ import { motion } from "framer-motion";
 function Home() {
   const skills = {
     Languages: ["Java", "C++", "C", "JavaScript"],
-    Frontend: ["React.js", "Next.js", "HTML", "CSS"],
-    Backend: ["Node.js", "Spring Boot", "MySQL", "MongoDB"],
-    Tools: ["VS Code", "Git/GitHub", "AWS(EC2)", "Vercel", "Render", "Postman"],
+    "Frontend": ["React.js", "Next.js", "HTML", "CSS"],
+    "Backend": ["Node.js", "Spring Boot", "MySQL", "MongoDB"],
+    "Frameworks / Libraries": [
+      "Spring Boot",
+      "WebSocket (STOMP)",
+      "Node.js",
+      "Express.js",
+      "React",
+    ],
+    "Core Concepts": ["DSA", "OOPS", "CN", "DBMS", "OS"],
+    "Tools": [
+      "VS Code",
+      "Git/GitHub",
+      "AWS (EC2)",
+      "Vercel",
+      "Render",
+      "Postman",
+      "Docker",
+    ],
   };
 
   const achievements = [
@@ -18,6 +34,7 @@ function Home() {
   ];
 
   const projects = [
+  
     {
       title: "Banking System",
       description:
@@ -31,6 +48,13 @@ function Home() {
         "A MERN-based web application connecting job seekers and recruiters. Features secure user authentication, resume upload & parsing, job posting & application management, and dynamic dashboards. Integrated with REST APIs and responsive UI for seamless experience.",
       tech: "MongoDB, Express, React, Node.js",
       link: "https://github.com/midhuna-06/jobEase-Smart-Job-Portal",
+    },
+    {
+      title: "Spring Connect",
+      description:
+        "A real-time chat application enabling instant communication between multiple users through WebSocket connections. Implements dynamic user tracking, live message broadcasting, and smooth frontend–backend integration. Fully containerized using Docker for easy deployment and scalability across environments.",
+      tech: "Spring Boot, WebSocket (STOMP), MySQL, Docker",
+      link: "https://github.com/midhuna-06/springboot-websocket-chat-app.git",
     },
   ];
 
@@ -78,7 +102,12 @@ function Home() {
           animate={{ opacity: 1 }}
           transition={{ delay: 1, duration: 1 }}
         >
-          💻 A dedicated Full Stack Developer with strong expertise in building scalable and high-performance web applications using MERN & Spring Boot. 🚀 I specialize in crafting intuitive and responsive UIs on the frontend while designing secure, reliable, and optimized APIs on the backend. 🌱 Constantly exploring emerging technologies to deliver modern and impactful software solutions.
+          💻 A dedicated Full Stack Developer with strong expertise in building
+          scalable and high-performance web applications using MERN & Spring
+          Boot. 🚀 I specialize in crafting intuitive and responsive UIs on the
+          frontend while designing secure, reliable, and optimized APIs on the
+          backend. 🌱 Constantly exploring emerging technologies to deliver
+          modern and impactful software solutions.
         </motion.p>
 
         {/* Navigation Buttons */}
@@ -106,7 +135,9 @@ function Home() {
           <h2 className="text-2xl font-bold text-cyan-400 mb-6">🚀 Skills</h2>
           {Object.keys(skills).map((category) => (
             <div key={category} className="mb-4">
-              <h3 className="text-lg font-semibold text-gray-300">{category}</h3>
+              <h3 className="text-lg font-semibold text-gray-300">
+                {category}
+              </h3>
               <div className="flex flex-wrap gap-2 sm:gap-3 mt-2">
                 {skills[category].map((skill) => (
                   <span
@@ -130,7 +161,9 @@ function Home() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <h2 className="text-2xl font-bold text-cyan-400 mb-6">📜 Achievements</h2>
+          <h2 className="text-2xl font-bold text-cyan-400 mb-6">
+            📜 Achievements
+          </h2>
           <ul className="list-disc list-inside text-gray-400 space-y-2">
             {achievements.map((ach, index) =>
               typeof ach === "string" ? (
@@ -153,38 +186,53 @@ function Home() {
       </section>
 
       {/* Projects Section */}
-      <section id="projects" className="py-12 sm:py-16">
-        <motion.div
-          className="bg-gray-800 rounded-2xl p-6 sm:p-8 shadow-lg"
-          initial={{ opacity: 0, y: 50 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-        >
-          <h2 className="text-2xl font-bold text-cyan-400 mb-6">💼 Projects</h2>
-          <div className="flex flex-col gap-4 sm:gap-6">
-            {projects.map((proj, index) => (
-              <div
-                key={index}
-                className="bg-gray-700 p-4 sm:p-6 rounded-xl hover:scale-105 transition transform"
-              >
-                <h3 className="text-lg font-semibold text-gray-300">{proj.title}</h3>
-                <p className="text-gray-400 mt-1 text-sm sm:text-base">{proj.description}</p>
-                <p className="text-xs text-gray-500 mt-1">Tech Stack: {proj.tech}</p>
+    <section id="projects" className="py-12 sm:py-16">
+      <motion.div
+        className="bg-gray-800 rounded-2xl p-6 sm:p-8 shadow-lg"
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+      >
+        <h2 className="text-2xl font-bold text-cyan-400 mb-6 flex items-center gap-2">
+          <span>💼</span> Projects
+        </h2>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          {projects.map((proj, index) => (
+            <div
+              key={index}
+              className="bg-[#1f2937] border border-gray-700 rounded-2xl p-6 flex flex-col justify-between hover:border-cyan-500 hover:shadow-lg transition duration-300"
+            >
+              <div>
+                <h3 className="text-lg font-semibold text-gray-100 mb-2">
+                  {proj.title}
+                </h3>
+                <p className="text-gray-300 text-sm leading-relaxed">
+                  {proj.description}
+                </p>
+              </div>
+
+              <div className="mt-4 border-t border-gray-600 pt-3">
+                <p className="text-cyan-400 font-semibold text-sm mb-2 flex items-center gap-1">
+                  ⚙️ {proj.tech}
+                </p>
                 {proj.link && (
                   <a
                     href={proj.link}
                     target="_blank"
                     rel="noreferrer"
-                    className="inline-block mt-2 bg-cyan-500 px-3 py-1 rounded-lg text-sm sm:text-base hover:scale-105 transition"
+                    className="inline-block bg-cyan-500 text-gray-900 font-medium px-3 py-1 rounded-md text-sm hover:bg-cyan-400 transition"
                   >
-                    View Project
+                    View Code
                   </a>
                 )}
               </div>
-            ))}
-          </div>
-        </motion.div>
-      </section>
+            </div>
+          ))}
+        </div>
+      </motion.div>
+    </section>
+
     </div>
   );
 }

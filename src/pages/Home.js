@@ -26,6 +26,7 @@ function Home() {
   };
 
   const achievements = [
+    "AWS Cloud Practitioner | AWS ",
     "Basics of Java and DSA Course | NavGurukul (AFE + ZUVY)",
     "Introduction to NoSQL Databases | Infosys Spring Board",
     "Mastering Data Structures using C and C++ | Udemy",
@@ -68,7 +69,7 @@ function Home() {
       {/* Hero Section */}
       <section className="flex flex-col items-center justify-center py-16 text-center gap-4">
         <motion.img
-          src="/profile.jpg"
+          src="/Blazer-PassportSize.jpg"
           alt="profile"
           className="w-32 sm:w-40 h-32 sm:h-40 rounded-full border-4 border-cyan-500 shadow-2xl"
           initial={{ scale: 0 }}

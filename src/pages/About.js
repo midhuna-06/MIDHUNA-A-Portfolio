@@ -4,7 +4,7 @@ function About() {
   const [view, setView] = useState("detailed");
 
   const contents = {
-    detailed: `Hello — I’m Midhuna A, a 3rd year CSE student at Sri Eshwar College of Engineering, and an FFE Scholar. 
+    detailed: `Hello — I’m Midhuna A, a final year CSE student at Sri Eshwar College of Engineering, and an FFE Scholar. 
 I am an aspiring Full Stack Developer building strong expertise in the MERN stack and Spring Boot. 
 I’m also an AWS enthusiast, exploring cloud services to enhance scalability and deployment.
 
@@ -16,7 +16,7 @@ My practical experience includes projects such as a Banking System (Spring Boot)
 I also actively practice Data Structures & Algorithms on LeetCode to strengthen my problem-solving skills.
 
 My goal is to grow into a versatile software developer, gain deeper expertise in Java, Cloud, and DevOps, and contribute to impactful, scalable applications.`,
-    short: `I’m Midhuna A, a 3rd year CSE student at Sri Eshwar College of Engineering and an FFE Scholar. 
+    short: `I’m Midhuna A, a final year CSE student at Sri Eshwar College of Engineering and an FFE Scholar. 
 I build full-stack applications using MERN and Spring Boot, I’m an AWS enthusiast, currently learning Docker & DevOps, 
 and I love solving problems and developing creative technologies.`,
     resume: `3rd year CSE, Sri Eshwar College of Engineering • FFE Scholar • MERN & Spring Boot Full-Stack Developer • AWS enthusiast • Learning Docker • Problem solver`,

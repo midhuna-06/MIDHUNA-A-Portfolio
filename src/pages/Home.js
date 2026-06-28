@@ -103,7 +103,7 @@ function Home() {
           animate={{ opacity: 1 }}
           transition={{ delay: 1, duration: 1 }}
         >
-          Full Stack Developer specializing in Java, Spring Boot, REST APIs, MERN Stack, MongoDB, and MySQL.
+          Full Stack Developer specializing in <b> Java, Spring Boot, REST APIs, MERN Stack, MongoDB, and MySQL.</b>
           I build secure, scalable, and user-friendly web applications with clean architecture and optimized performance. 
           Passionate about solving real-world problems through modern software development.
         </motion.p>

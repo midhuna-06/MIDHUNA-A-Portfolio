@@ -103,12 +103,9 @@ function Home() {
           animate={{ opacity: 1 }}
           transition={{ delay: 1, duration: 1 }}
         >
-          💻 A dedicated Full Stack Developer with strong expertise in building
-          scalable and high-performance web applications using MERN & Spring
-          Boot. 🚀 I specialize in crafting intuitive and responsive UIs on the
-          frontend while designing secure, reliable, and optimized APIs on the
-          backend. 🌱 Constantly exploring emerging technologies to deliver
-          modern and impactful software solutions.
+          Full Stack Developer specializing in Java, Spring Boot, REST APIs, MERN Stack, MongoDB, and MySQL.
+          I build secure, scalable, and user-friendly web applications with clean architecture and optimized performance. 
+          Passionate about solving real-world problems through modern software development.
         </motion.p>
 
         {/* Navigation Buttons */}

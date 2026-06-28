@@ -19,7 +19,7 @@ My goal is to grow into a versatile software developer, gain deeper expertise in
     short: `I’m Midhuna A, a final year CSE student at Sri Eshwar College of Engineering and an FFE Scholar. 
 I build full-stack applications using MERN and Spring Boot, I’m an AWS enthusiast, currently learning Docker & DevOps, 
 and I love solving problems and developing creative technologies.`,
-    resume: `3rd year CSE, Sri Eshwar College of Engineering • FFE Scholar • MERN & Spring Boot Full-Stack Developer • AWS enthusiast • Learning Docker • Problem solver`,
+    resume: `Final year CSE, Sri Eshwar College of Engineering • FFE Scholar • MERN & Spring Boot Full-Stack Developer • AWS enthusiast • Learning Docker • Problem solver`,
   };
 
   const copyText = async () => {

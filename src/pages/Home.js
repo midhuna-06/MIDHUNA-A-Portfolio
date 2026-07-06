@@ -86,7 +86,7 @@ function Home() {
         </motion.h1>
 
         <motion.a
-          href="https://drive.google.com/drive/folders/12PjXtR3zBN5EQT3oi4TXCXtiPb9cmkRR"
+          href="https://drive.google.com/file/d/1UMi6lpRP8xZjjzo4MLgmRJNbNkPDJ1NE/view?usp=sharing"
           target="_blank"
           rel="noreferrer"
           className="mt-2 sm:mt-4 px-6 py-2 bg-cyan-500 text-white font-semibold rounded-full hover:bg-cyan-600 transition text-sm sm:text-base"
@@ -103,7 +103,7 @@ function Home() {
           animate={{ opacity: 1 }}
           transition={{ delay: 1, duration: 1 }}
         >
-          Full Stack Developer specializing in Java, Spring Boot, REST APIs, MERN Stack, MongoDB, and MySQL.
+          Full Stack Developer specializing in <b>Java, Spring Boot, REST APIs, MERN Stack, MongoDB, and MySQL.</b>
           I build secure, scalable, and user-friendly web applications with clean architecture and optimized performance. 
           Passionate about solving real-world problems through modern software development.
         </motion.p>

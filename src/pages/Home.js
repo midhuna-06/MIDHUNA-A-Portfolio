@@ -5,7 +5,7 @@ function Home() {
   const skills = {
     Languages: ["Java", "C++", "C", "JavaScript"],
     "Frontend": ["React.js", "Next.js", "HTML", "CSS"],
-    "Backend": ["Node.js", "Spring Boot", "MySQL", "MongoDB"],
+    "Backend": ["Node.js", "Spring Boot", "SpringSecurity","MySQL", "MongoDB"],
     "Frameworks / Libraries": [
       "Spring Boot",
       "WebSocket (STOMP)",

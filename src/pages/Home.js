@@ -8,12 +8,9 @@ function Home() {
     "Backend": ["Node.js", "Spring Boot", "SpringSecurity","MySQL", "MongoDB"],
     "Frameworks / Libraries": [
       "Spring Boot",
-      "WebSocket (STOMP)",
-      "Node.js",
-      "Express.js",
       "React",
     ],
-    "Core Concepts": ["DSA", "OOPS", "CN", "DBMS", "OS"],
+    "Core Concepts": ["DSA", "OOPS", "DBMS", "OS"],
     "Tools": [
       "VS Code",
       "Git/GitHub",
@@ -26,6 +23,7 @@ function Home() {
   };
 
   const achievements = [
+    "SpringBoot Session | RAMPeX",
     "AWS Cloud Practitioner | AWS ",
     "Basics of Java and DSA Course | NavGurukul (AFE + ZUVY)",
     "Introduction to NoSQL Databases | Infosys Spring Board",
@@ -35,27 +33,32 @@ function Home() {
   ];
 
   const projects = [
+    {
+      titlle : "Quiz Application",
+      description:
+      "A Spring Boot-based scalable Quiz application built using a microservices architecture, featuring quiz management, service discovery, centralized routing, and inter-service communication. Implemented Eureka for dynamic service discovery, API Gateway for centralized routing, OpenFeign for inter-service communication, and MySQL with JPA for persistent data management.",
+      tech : "Spring Boot, Spring Cloud, API Gateway, Eureka, OpenFeign, MySQL, JPA"
+
+    },
   
     {
       title: "Banking System",
       description:
         "A Spring Boot web application for core banking operations with secure authentication, account management, balance inquiry, fund transfer, and transaction history. Uses REST APIs and Spring Security for scalability and robustness.",
-      tech: "Spring Boot, REST API, Spring Security, MySQL",
-      link: "https://github.com/midhuna-06/Bank_App_SpringBoot",
+      tech: "Spring Boot, REST API, Spring Security, MySQL"
     },
     {
       title: "Job Portal",
       description:
         "A MERN-based web application connecting job seekers and recruiters. Features secure user authentication, resume upload & parsing, job posting & application management, and dynamic dashboards. Integrated with REST APIs and responsive UI for seamless experience.",
-      tech: "MongoDB, Express, React, Node.js",
-      link: "https://github.com/midhuna-06/jobEase-Smart-Job-Portal",
+      tech: "MongoDB, Express, React, Node.js"
     },
     {
       title: "Spring Connect",
       description:
         "A real-time chat application enabling instant communication between multiple users through WebSocket connections. Implements dynamic user tracking, live message broadcasting, and smooth frontend–backend integration. Fully containerized using Docker for easy deployment and scalability across environments.",
-      tech: "Spring Boot, WebSocket (STOMP), MySQL, Docker",
-      link: "https://github.com/midhuna-06/springboot-websocket-chat-app.git",
+      tech: "Spring Boot, WebSocket (STOMP), MySQL, Docker"
+      
     },
   ];
 
@@ -86,7 +89,7 @@ function Home() {
         </motion.h1>
 
         <motion.a
-          href="https://drive.google.com/file/d/1pRQXWc2K8AxujIM8Fh_t4BMgz-4icvUs/view?usp=sharing"
+          href="https://drive.google.com/file/d/1EkPCVUg--2wjWxU98tS42DAr--QEO9Me/view?usp=sharing"
           target="_blank"
           rel="noreferrer"
           className="mt-2 sm:mt-4 px-6 py-2 bg-cyan-500 text-white font-semibold rounded-full hover:bg-cyan-600 transition text-sm sm:text-base"

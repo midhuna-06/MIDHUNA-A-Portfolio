@@ -39,7 +39,7 @@ and I love solving problems and developing creative technologies.`,
         <div className="text-center sm:text-left">
           <h1 className="text-2xl sm:text-3xl font-bold">MIDHUNA A</h1>
           <p className="text-cyan-400 font-medium text-sm sm:text-base">
-            3rd year CSE · Sri Eshwar College of Engineering · FFE Scholar
+            final year CSE · Sri Eshwar College of Engineering · FFE Scholar
           </p>
         </div>
       </div>
